@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum install httpd -y
+cd /var/www/html
+sudo touch index.html
+sudo echo "<h1>server1<h1>" >> index.html
+sudo systemctl restart httpd 
